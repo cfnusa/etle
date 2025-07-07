@@ -170,6 +170,31 @@
             margin: 0 auto 3rem;
             font-size: 1.1rem;
         }
+
+        section-title-stat {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--light);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title-stat::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: var(--accent);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .section-subtitle-stat {
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
         
         .features-grid {
             display: grid;
@@ -566,8 +591,8 @@
     </section>
 
     <section class="stats">
-        <h2 class="section-title">Dampak Positif ETLE Digital</h2>
-        <p class="section-subtitle">Sistem ini telah memberikan kontribusi signifikan dalam meningkatkan keselamatan lalu lintas</p>
+        <h2 class="section-title-stat">Dampak Positif ETLE Digital</h2>
+        <p class="section-subtitle-stat">Sistem ini telah memberikan kontribusi signifikan dalam meningkatkan keselamatan lalu lintas</p>
         
         <div class="stats-grid">
             <div class="stat-item">
