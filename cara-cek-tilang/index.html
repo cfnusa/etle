@@ -354,6 +354,23 @@
             margin-bottom: 0.5rem;
             color: var(--primary);
         }
+
+        /* Row Langkah */
+        .row-langkah {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+
+        .col-kiri {
+            flex: 60%;
+            max-width: 60%;
+        }
+
+        .col-kanan {
+            flex: 40%;
+            max-width: 40%;
+        }
         
         /* Info Box */
         .info-box {
@@ -672,44 +689,56 @@
                     <li>Tidak memakai helm (untuk motor)</li>
                     <li>Tidak menggunakan plat nomor kendaraan resmi</li>
                 </ul>
-                <h3>Langkah-langkah Cek Tilang Elektronik Secara Online</h3>
-                <p>Berikut adalah langkah-langkah mudah untuk melakukan pengecekan tilang elektronik:</p>
-                <h4>1. Kunjungi Situs Resmi ETLE</h4>
-                <p>Buka situs <a href="https://etle-pmj.id">etle-pmj.id</a> atau situs resmi ETLE dari Kepolisian daerah masing-masing.</p>
-                <h4>2. Masukkan Nomor Plat Kendaraan</h4>
-                <p>Ketika Anda sudah membuka halaman resmi pengecekan tilang ETLE diatas. Ada 3 form yang harus Anda isikan sesuai dengan data kendaraan yang Anda miliki. Isikan data seperti:</p>
-                <ul>
-                    <li>Nomor Plat Kendaraan Bermotor</li>
-                    <li>Nomor Rangka Kendaraan</li>
-                    <li>Nomor Mesin Kendaraan</li>
-                    <li>Nomor Referensi/Kode</li>
-                </ul>
-                <h4>3. Klik "Cari/Cek Data"</h4>
-                <p>Setelah Anda berhasil memasukkan data kendaraan bermotor Anda dengan benar, silahkan Anda klik cari / cek data. Sistem secara otomatis akan menampilkan hasil jika kendaraan Anda terdeteksi melakukan pelanggaran.</p>
-                <h4>4. Lihat Detail Tilang Elektronik</h4>
-                <p>Jika kendaraan Anda terdeteksi melakukan pelanggaran lalu lintas, sistem akan menampilkan informasi terkait pelanggaran lalu lintas yang kendaraan Anda lakukan. Informasi yang ditampilkan biasanya meliputi:</p>
-                <ul>
-                    <li>Jenis pelanggaran</li>
-                    <li>Lokasi dan waktu kejadian</li>
-                    <li>Bukti foto pelanggaran lalu lintas</li>
-                    <li>Besaran denda yang harus dibayarkan</li>
-                </ul>
-                <h4>5. Lakukan Pembayaran Tilang</h4>
-                <p>Setelah data dan informasi mengenai pelanggaran lalu lintas sudah ditampilkan, saatnya Anda membayar denda tilang eletronik. Pembayaran bisa dilakukan melalui berbagai kanal pembarayan seperti:</p>
-                <ul>
-                    <li>ATM (BRI, Mandiri, BNI, dll)</li>
-                    <li>Mobile Banking</li>
-                    <li>Kantor Kejaksaan atau pengadilan</li>
-                    <li>APlikasi e-Tilang atau e-Samsat</li>
-                </ul>
-                <h3>Konsekuensi Jika Tidak Membayar Tilang Elektronik</h3>
-                <p>Ketika Anda mendapatkan surat tilang elektronik, sebaiknya Anda segera memeriksa apakah kendaraan benar-benar melakukan pelanggaran lalu lintas atau tidak. Anda bisa kunjungi website yang tertera diatas.</p>
-                <p>Jika setelah Anda periksa pada website diatas, dan ternyata kendaraan Anda melakukan pelanggaran lalu lintas. Sebaiknya Anda langsung membayarkan tilang tersebut, karena jika tidak, ada berbagai konsekuensinya seperti: </p>
-                <ul>
-                    <li>Pemnblokirin STNK</li>
-                    <li>Keterlambatan dalam pembayaran pajak kendaraan</li>
-                    <li>Masalah hukum saat perpanjangan SIM atau balik nama</li>
-                </ul>
+
+                <section id="langkah">
+                    <div class="row-langkah">
+                        <div class="col-kiri">
+                        <h3>Langkah-langkah Cek Tilang Elektronik Secara Online</h3>
+                        <p>Berikut adalah langkah-langkah mudah untuk melakukan pengecekan tilang elektronik:</p>
+                        <h4>1. Kunjungi Situs Resmi ETLE</h4>
+                        <p>Buka situs <a href="https://etle-pmj.id">etle-pmj.id</a> atau situs resmi ETLE dari Kepolisian daerah masing-masing.</p>
+                        <h4>2. Masukkan Nomor Plat Kendaraan</h4>
+                        <p>Ketika Anda sudah membuka halaman resmi pengecekan tilang ETLE diatas. Ada 3 form yang harus Anda isikan sesuai dengan data kendaraan yang Anda miliki. Isikan data seperti:</p>
+                        <ul>
+                            <li>Nomor Plat Kendaraan Bermotor</li>
+                            <li>Nomor Rangka Kendaraan</li>
+                            <li>Nomor Mesin Kendaraan</li>
+                            <li>Nomor Referensi/Kode</li>
+                        </ul>
+                        <h4>3. Klik "Cari/Cek Data"</h4>
+                        <p>Setelah Anda berhasil memasukkan data kendaraan bermotor Anda dengan benar, silahkan Anda klik cari / cek data. Sistem secara otomatis akan menampilkan hasil jika kendaraan Anda terdeteksi melakukan pelanggaran.</p>
+                        <h4>4. Lihat Detail Tilang Elektronik</h4>
+                        <p>Jika kendaraan Anda terdeteksi melakukan pelanggaran lalu lintas, sistem akan menampilkan informasi terkait pelanggaran lalu lintas yang kendaraan Anda lakukan. Informasi yang ditampilkan biasanya meliputi:</p>
+                        <ul>
+                            <li>Jenis pelanggaran</li>
+                            <li>Lokasi dan waktu kejadian</li>
+                            <li>Bukti foto pelanggaran lalu lintas</li>
+                            <li>Besaran denda yang harus dibayarkan</li>
+                        </ul>
+                        <h4>5. Lakukan Pembayaran Tilang</h4>
+                        <p>Setelah data dan informasi mengenai pelanggaran lalu lintas sudah ditampilkan, saatnya Anda membayar denda tilang eletronik. Pembayaran bisa dilakukan melalui berbagai kanal pembarayan seperti:</p>
+                        <ul>
+                            <li>ATM (BRI, Mandiri, BNI, dll)</li>
+                            <li>Mobile Banking</li>
+                            <li>Kantor Kejaksaan atau pengadilan</li>
+                            <li>APlikasi e-Tilang atau e-Samsat</li>
+                        </ul>
+                        <h3>Konsekuensi Jika Tidak Membayar Tilang Elektronik</h3>
+                        <p>Ketika Anda mendapatkan surat tilang elektronik, sebaiknya Anda segera memeriksa apakah kendaraan benar-benar melakukan pelanggaran lalu lintas atau tidak. Anda bisa kunjungi website yang tertera diatas.</p>
+                        <p>Jika setelah Anda periksa pada website diatas, dan ternyata kendaraan Anda melakukan pelanggaran lalu lintas. Sebaiknya Anda langsung membayarkan tilang tersebut, karena jika tidak, ada berbagai konsekuensinya seperti: </p>
+                        <ul>
+                            <li>Pemnblokirin STNK</li>
+                            <li>Keterlambatan dalam pembayaran pajak kendaraan</li>
+                            <li>Masalah hukum saat perpanjangan SIM atau balik nama</li>
+                        </ul>
+                        </div>
+
+                        <div class="col-kanan">
+                            <p>Test</p>
+                        </div>
+                    </div>
+
+                </section>
                 <p>Transportasi di Jakarta khususnya memang sangat menantang, baik dari peraturan maupun jumlah kendaraan yang berada di jalanan terutama saat rush hour. Ada baiknya kita sebagai pengguna jalan wajib untuk mematuhi rambu-rambu lalu lintas dan marka jalan. Menggunakan sabuk pengaman ketika berkendara dengan kendaraan roda empat atau lebih. Jangan menggunakan ataupun bermain ponsel ketika berkendara, sekiranya ingin menggunakan ponsel, ada baiknya kita menepi dulu. Pastikan plat kendaraan dan surat-surat kendaraan bermotor lengkap pada saat kita berkendara. Patuhi batas kecepatan yang tertera pada marka jalan.</p>
             <p>Dengan sistem tilang elektronik, proses penegakan hukum lalu lintas menjadi lebih transparan, akurat, dan efisien. Penting bagi pengguna jalan untuk selalu mematuhi peraturan demi keselamatan diri dan orang lain. Dan jika Anda ingin memeriksa apakah kendaraan Anda terkena tilang, sekarang Anda tahu cara cek tilang elektronik secara cepat dan mudah.</p>
             </div>
