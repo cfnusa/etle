@@ -357,9 +357,9 @@
 
         /* Row Langkah */
         .row-langkah {
-            display: flex;
-            flex-wrap: wrap;
-            box-sizing: border-box;
+            display: flgridex;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
 
         .col-kiri {
@@ -615,7 +615,7 @@
             .section-title {
                 font-size: 2rem;
             }
-            .content-section {
+            .row-langkah {
                 grid-template-columns: 1fr;
             }
         }
