@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap:https://etle-pmj.pages.dev/sitemap.xml
