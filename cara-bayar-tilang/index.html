@@ -1,1 +1,909 @@
-<h1>Cara Bayar Tilang Elektronik</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Bayar Tilang Elektronik Mudah Cepat Tanpa Ribet</title>
+    <meta name="description" content="Membayar denda tilang elektronik atau E-TLE (Electronic Traffic Law Enforcement) kini semakin mudah. Prosedur yang dahulu rumit, kini dapat diselesaikan secara daring melalui berbagai platform digital.">
+    <meta name="google-site-verification" content="QagWzlaOyaZqVXm5ejRqcYpXOGYh-OA5u_a9k6YCDKQ" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../favico.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #f59e0b;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 5%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .cta-button {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-content a {
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+        
+        .hero {
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(30, 64, 175, 0.9)), url('https://img.jakpost.net/c/2023/02/01/2023_02_01_135079_1675230408._large.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .hero-buttons a {
+            text-decoration: none;
+        }
+
+        .hero img {
+            display: block;
+            max-width: 300px;
+            margin-inline: auto;
+        }
+        
+        .secondary-button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .secondary-button:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+        
+        .features {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: var(--accent);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .section-subtitle {
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        .section-title-stat {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--light);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title-stat::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background-color: var(--accent);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .section-subtitle-stat {
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .content-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-grid {
+            border-radius: 10px;
+            padding: .5rem;
+            gap: 2rem;
+            margin-top: 3rem,
+        }
+
+        .content-card {
+            text-align: left;
+        }
+
+        .content-card p {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .content-card li {
+            margin-left: 25px;
+        }
+
+        .content-card ul {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .how-it-works {
+            padding: 5rem 5%;
+            background-color: #f1f5f9;
+            text-align: center;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background-color: var(--accent);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Step Cards */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .step-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .steps-number {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Row Langkah */
+        .row-langkah {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .col-kiri {
+            flex: 60%;
+            max-width: 60%;
+        }
+
+        .col-kanan {
+            flex: 40%;
+            max-width: 40%;
+        }
+
+        .img-container {
+            width: 300px;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        /* Info Box */
+        .info-box {
+            background-color: #e7f1ff;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+        }
+        
+        .info-box-title {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .stats {
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-item h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .testimonials {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.3;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .cta-section {
+            padding: 5rem 5%;
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-content p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background-color: #0f172a;
+            color: white;
+            padding: 3rem 5% 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .footer-about p {
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        
+        .footer-links h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent);
+            bottom: -8px;
+            left: 0;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            opacity: 0.8;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+            opacity: 1;
+            padding-left: 5px;
+        }
+        
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            .row-langkah {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../logo-etnas-removebg-preview.png" alt="ETLE Digital Logo">
+                <span>ETLE PMJ 2025</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#how-it-works">Cara Kerja</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#" class="cta-button">Cek ETLE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <section class="hero">
+        <img src="../logo-etnas-removebg-preview.png">
+        <h1>Sistem ETLE Digital Modern untuk Penegakan Hukum Lalu Lintas</h1>
+        <p>Solusi terintegrasi untuk mendeteksi pelanggaran lalu lintas secara otomatis dengan teknologi kamera canggih dan kecerdasan buatan.</p>
+        <div class="hero-buttons">
+            <a href="#" class="secondary-button">Pelajari Lebih Lanjut</a>
+        </div>
+    </section> -->
+
+    <section class="content" id="features">
+        <h2 class="section-title">Cara Bayar Tilang Elektronik Mudah Cepat Tanpa Ribet</h2>
+        <p class="section-subtitle">Membayar denda tilang elektronik atau E-TLE (Electronic Traffic Law Enforcement) kini semakin mudah. Prosedur yang dahulu rumit, kini dapat diselesaikan secara daring melalui berbagai platform digital.</p>
+        
+        <div class="content-grid">
+            <div class="content-card">
+                
+                
+                <div class="content-section">
+                      <h1>Cara Membayar Tilang Elektronik (E-TLE) dan Platform Pendukung</h1>
+    <p>Membayar denda tilang elektronik atau E-TLE (Electronic Traffic Law Enforcement) kini semakin mudah. Prosedur yang dahulu rumit, kini dapat diselesaikan secara daring melalui berbagai platform digital. Artikel ini akan menjelaskan secara rinci cara membayar tilang elektronik, serta platform apa saja yang bisa digunakan untuk mempermudah proses pembayaran.</p>
+
+    <h2>Mengenal Tilang Elektronik (E-TLE)</h2>
+    <p>Sebelum membahas cara pembayaran, penting untuk memahami apa itu E-TLE. Sistem E-TLE merupakan penegakan hukum lalu lintas berbasis teknologi. Kamera canggih dipasang di berbagai titik strategis untuk merekam pelanggaran lalu lintas secara otomatis, seperti menerobos lampu merah, tidak mengenakan sabuk pengaman, atau menggunakan telepon seluler saat berkendara.</p>
+    <p>Setelah pelanggaran terekam, data kendaraan akan diverifikasi. Surat konfirmasi tilang kemudian akan dikirim ke alamat pemilik kendaraan. Surat ini berisi informasi lengkap mengenai pelanggaran yang dilakukan, lokasi, waktu, dan tenggat waktu untuk konfirmasi.</p>
+
+    <hr>
+
+    <h2>Tahapan Pembayaran Tilang Elektronik</h2>
+    <p>Proses pembayaran tilang elektronik secara umum terdiri dari tiga tahapan utama: konfirmasi, penerbitan kode pembayaran, dan pembayaran.</p>
+
+    <h3>1. Konfirmasi Pelanggaran</h3>
+    <p>Langkah pertama adalah melakukan konfirmasi atas pelanggaran yang tercantum dalam surat tilang. Konfirmasi dapat dilakukan melalui situs web resmi E-TLE Polri atau datang langsung ke kantor polisi terdekat.</p>
+    <ul>
+        <li><strong>Melalui Situs Web E-TLE Polri:</strong>
+            <ul>
+                <li>Kunjungi situs web <code>etle-korlantas.info</code>.</li>
+                <li>Masukkan nomor registrasi kendaraan, nomor mesin, dan nomor BPKB.</li>
+                <li>Klik "Cari Data" untuk melihat detail pelanggaran.</li>
+                <li>Setelah data pelanggaran muncul, klik "Konfirmasi Data Pelanggaran."</li>
+                <li>Isi formulir konfirmasi dengan data diri Anda.</li>
+                <li>Setelah formulir terisi, Anda akan mendapatkan email balasan berisi nomor registrasi konfirmasi.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>2. Penerbitan Kode Pembayaran (BRIVA)</h3>
+    <p>Setelah melakukan konfirmasi dan dinyatakan benar, Anda akan menerima kode pembayaran. Kode ini dikenal sebagai <span class="briva-code">BRIVA (BRI Virtual Account)</span>. Kode BRIVA ini bersifat unik untuk setiap pelanggaran dan hanya berlaku dalam jangka waktu tertentu. Kode ini dapat diterima melalui email atau pesan singkat (SMS).</p>
+
+    <h3>3. Pembayaran Denda Tilang</h3>
+    <p>Setelah mendapatkan kode pembayaran, Anda dapat segera melakukan pembayaran denda. Ada berbagai platform yang menunjang pembayaran tilang elektronik, baik secara daring maupun luring.</p>
+
+    <hr>
+
+    <h2>Platform untuk Pembayaran Tilang Elektronik</h2>
+    <p>Berikut adalah platform yang bisa Anda gunakan untuk membayar denda tilang:</p>
+
+    <h3>A. Melalui Bank BRI</h3>
+    <p>Bank BRI adalah salah satu bank yang terintegrasi langsung dengan sistem E-TLE. Anda dapat membayar denda melalui berbagai layanan perbankan BRI.</p>
+    <ul>
+        <li><strong>Mobile Banking (BRImo):</strong> Buka aplikasi BRImo, pilih menu "Pembayaran" > "Pembayaran Tilang," masukkan kode BRIVA, konfirmasi, dan simpan bukti pembayaran.</li>
+        <li><strong>ATM BRI:</strong> Masukkan kartu ATM dan PIN, pilih "Transaksi Lain" > "Pembayaran" > "Lainnya" > "BRIVA," masukkan kode BRIVA, dan cetak struk.</li>
+        <li><strong>Teller Bank BRI:</strong> Kunjungi kantor cabang, sampaikan kepada teller untuk pembayaran tilang, berikan kode BRIVA, dan simpan bukti pembayaran.</li>
+    </ul>
+
+    <h3>B. Melalui Bank Lain (Transfer Antar Bank)</h3>
+    <p>Jika Anda tidak memiliki rekening di Bank BRI, Anda tetap dapat melakukan pembayaran melalui bank lain dengan metode transfer.</p>
+    <ul>
+        <li><strong>Mobile Banking/Internet Banking Bank Lain:</strong> Pilih menu "Transfer" > "Transfer ke Bank Lain," pilih Bank BRI sebagai bank tujuan, dan masukkan kode BRIVA sebagai nomor rekening.</li>
+    </ul>
+
+    <h3>C. Melalui E-commerce dan Dompet Digital</h3>
+    <p>Seiring berkembangnya teknologi, beberapa platform e-commerce dan dompet digital juga telah menyediakan layanan pembayaran tilang. Layanan ini menawarkan kemudahan dan sering kali terintegrasi langsung dengan sistem bank.</p>
+    <ul>
+        <li><strong>E-commerce (misalnya Tokopedia, Shopee):</strong> Pada aplikasi, cari menu "Pembayaran" atau "Pajak & Tilang," pilih "Tilang" atau "BRIVA," dan masukkan kode BRIVA.</li>
+        <li><strong>Dompet Digital (misalnya OVO, DANA):</strong> Beberapa dompet digital juga telah memiliki fitur pembayaran BRIVA. Cari menu "Pembayaran" atau "Layanan Publik" dan masukkan kode BRIVA.</li>
+    </ul>
+
+    <div class="important-note">
+        <h3>Penting untuk Diperhatikan:</h3>
+        <ul>
+            <li><strong>Segera Bayar:</strong> Jangan menunda pembayaran denda tilang. Jika melewati batas waktu yang ditentukan, STNK kendaraan Anda dapat diblokir sementara.</li>
+            <li><strong>Simpan Bukti Pembayaran:</strong> Setelah melakukan pembayaran, pastikan Anda menyimpan bukti pembayaran, baik dalam bentuk cetak maupun digital. Bukti ini penting jika terjadi masalah di kemudian hari.</li>
+            <li><strong>Cek Kembali:</strong> Setelah pembayaran, pastikan status tilang Anda di situs web E-TLE sudah berubah menjadi "Lunas."</li>
+        </ul>
+    </div>
+
+    <p>Membayar tilang elektronik kini tidak lagi memakan waktu dan tenaga. Dengan adanya berbagai platform pembayaran, masyarakat dapat menyelesaikan kewajibannya secara cepat dan efisien, mendukung terciptanya sistem lalu lintas yang lebih tertib dan modern.</p>
+
+</div>              
+                    
+                </div>    
+                <div class="content-section">
+                    <section id="langkah">
+                    <div class="row-langkah">
+                        <div class="col-kiri">
+                        <h3>Langkah-langkah Cek Tilang Elektronik Secara Online</h3>
+                        <p>Berikut adalah langkah-langkah mudah untuk melakukan pengecekan tilang elektronik:</p>
+                        <h4>1. Kunjungi Situs Resmi ETLE</h4>
+                        <p>Buka situs <a href="https://etle-pmj.id">etle-pmj.id</a> atau situs resmi ETLE dari Kepolisian daerah masing-masing.</p>
+                        <h4>2. Masukkan Nomor Plat Kendaraan</h4>
+                        <p>Ketika Anda sudah membuka halaman resmi pengecekan tilang ETLE diatas. Ada 3 form yang harus Anda isikan sesuai dengan data kendaraan yang Anda miliki. Isikan data seperti:</p>
+                        <ul>
+                            <li>Nomor Plat Kendaraan Bermotor</li>
+                            <li>Nomor Rangka Kendaraan</li>
+                            <li>Nomor Mesin Kendaraan</li>
+                            <li>Nomor Referensi/Kode</li>
+                        </ul>
+                        <h4>3. Klik "Cari/Cek Data"</h4>
+                        <p>Setelah Anda berhasil memasukkan data kendaraan bermotor Anda dengan benar, silahkan Anda klik cari / cek data. Sistem secara otomatis akan menampilkan hasil jika kendaraan Anda terdeteksi melakukan pelanggaran.</p>
+                        <h4>4. Lihat Detail Tilang Elektronik</h4>
+                        <p>Jika kendaraan Anda terdeteksi melakukan pelanggaran lalu lintas, sistem akan menampilkan informasi terkait pelanggaran lalu lintas yang kendaraan Anda lakukan. Informasi yang ditampilkan biasanya meliputi:</p>
+                        <ul>
+                            <li>Jenis pelanggaran</li>
+                            <li>Lokasi dan waktu kejadian</li>
+                            <li>Bukti foto pelanggaran lalu lintas</li>
+                            <li>Besaran denda yang harus dibayarkan</li>
+                        </ul>
+                        <h4>5. Lakukan Pembayaran Tilang</h4>
+                        <p>Setelah data dan informasi mengenai pelanggaran lalu lintas sudah ditampilkan, saatnya Anda membayar denda tilang eletronik. Pembayaran bisa dilakukan melalui berbagai kanal pembarayan seperti:</p>
+                        <ul>
+                            <li>ATM (BRI, Mandiri, BNI, dll)</li>
+                            <li>Mobile Banking</li>
+                            <li>Kantor Kejaksaan atau pengadilan</li>
+                            <li>APlikasi e-Tilang atau e-Samsat</li>
+                        </ul>
+                   
+                        </div>
+
+                        <div class="col-kanan">
+                            <div class="img-container">
+                                <img src="../langkah-cek-etle.png" alt="cara cek etle" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    </section>
+                </div>
+                <h3>Konsekuensi Jika Tidak Membayar Tilang Elektronik</h3>
+                <p>Ketika Anda mendapatkan surat tilang elektronik, sebaiknya Anda segera memeriksa apakah kendaraan benar-benar melakukan pelanggaran lalu lintas atau tidak. Anda bisa kunjungi website yang tertera diatas.</p>
+                <p>Jika setelah Anda periksa pada website diatas, dan ternyata kendaraan Anda melakukan pelanggaran lalu lintas. Sebaiknya Anda langsung membayarkan tilang tersebut, karena jika tidak, ada berbagai konsekuensinya seperti: </p>
+                <ul>
+                    <li>Pemnblokirin STNK</li>
+                    <li>Keterlambatan dalam pembayaran pajak kendaraan</li>
+                    <li>Masalah hukum saat perpanjangan SIM atau balik nama</li>
+                </ul>
+                <p>Transportasi di Jakarta khususnya memang sangat menantang, baik dari peraturan maupun jumlah kendaraan yang berada di jalanan terutama saat rush hour. Ada baiknya kita sebagai pengguna jalan wajib untuk mematuhi rambu-rambu lalu lintas dan marka jalan. Menggunakan sabuk pengaman ketika berkendara dengan kendaraan roda empat atau lebih. Jangan menggunakan ataupun bermain ponsel ketika berkendara, sekiranya ingin menggunakan ponsel, ada baiknya kita menepi dulu. Pastikan plat kendaraan dan surat-surat kendaraan bermotor lengkap pada saat kita berkendara. Patuhi batas kecepatan yang tertera pada marka jalan.</p>
+            <p>Dengan sistem tilang elektronik, proses penegakan hukum lalu lintas menjadi lebih transparan, akurat, dan efisien. Penting bagi pengguna jalan untuk selalu mematuhi peraturan demi keselamatan diri dan orang lain. Dan jika Anda ingin memeriksa apakah kendaraan Anda terkena tilang, sekarang Anda tahu cara cek tilang elektronik secara cepat dan mudah.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <h2 class="section-title">Bagaimana Sistem ETLE Bekerja?</h2>
+        <p class="section-subtitle">Proses deteksi pelanggaran hingga penerbitan surat tilang elektronik dilakukan secara otomatis dan terintegrasi</p>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Deteksi Pelanggaran</h3>
+                <p>Kamera canggih akan merekam kendaraan yang melakukan pelanggaran di titik-titik rawan pelanggaran.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Identifikasi Kendaraan</h3>
+                <p>Sistem akan membaca plat nomor kendaraan dan mencocokkan dengan database kendaraan terdaftar.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Verifikasi Data</h3>
+                <p>Data pelanggaran diverifikasi oleh petugas untuk memastikan akurasi sebelum diproses lebih lanjut.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Penerbitan Surat Tilang</h3>
+                <p>Surat tilang elektronik dikirimkan kepada pemilik kendaraan melalui aplikasi atau alamat terdaftar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2 class="section-title-stat">Dampak Positif ETLE Digital</h2>
+        <p class="section-subtitle-stat">Sistem ini telah memberikan kontribusi signifikan dalam meningkatkan keselamatan lalu lintas</p>
+        
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>75%</h3>
+                <p>Penurunan pelanggaran lampu merah di lokasi ETLE</p>
+            </div>
+            
+            <div class="stat-item">
+                <h3>1.2jt+</h3>
+                <p>Pelanggaran terdeteksi sejak sistem dioperasikan</p>
+            </div>
+            
+            <div class="stat-item">
+                <h3>40%</h3>
+                <p>Penurunan kecelakaan di titik rawan pelanggaran</p>
+            </div>
+            
+            <div class="stat-item">
+                <h3>98%</h3>
+                <p>Akurasi sistem dalam identifikasi pelanggaran</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="cta-content">
+            <h2>Siap Menerapkan ETLE Digital di Wilayah Anda?</h2>
+            <p>Hubungi kami sekarang untuk konsultasi dan demo sistem secara gratis. Tingkatkan keselamatan dan kedisiplinan berlalu lintas dengan solusi teknologi terkini.</p>
+            <a href="#" class="cta-button">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="logo-etnas-removebg-preview.png" alt="ETLE Digital Logo">
+                    <span>ETLE Digital</span>
+                </div>
+                <p>Sistem Elektronik Tilang Lalu Lintas terintegrasi untuk penegakan hukum yang lebih transparan dan akuntabel.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#how-it-works">Cara Kerja</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="/cara-cek-tilang">Cek Tilang</a></li>
+                    <li><a href="/cara-bayar-tilang">Bayar Tilang</a></li>
+                    <li><a href="/cara-banding-tilang">Banding Tilang</a></li>
+                    <li><a href="/titik-lokasi-etle">Lokasi ETLE</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Jenderal Sudirman No. 55, Jakarta Pusat</p>
+                <p><i class="fas fa-phone-alt"></i> (021) 1234-5678</p>
+                <p><i class="fas fa-envelope"></i> info@etledigital.id</p>
+                <p><i class="fas fa-clock"></i> Senin-Jumat: 08.00-17.00 WIB</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 ETLE PMJ Digital. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
